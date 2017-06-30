@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://rawgit.com/aframevr/aframe/ee12d49/dist/aframe-master.min.js"></script>
+	  <script src="https://rawgit.com/gasolin/aframe-href-component/master/dist/aframe-href-component.min.js"></script> 
+
+  </head>
+  <body>
+    <a-scene>
+	
+<a-entity look-at="0 1.6 0" scale="25 25 25" position="0 1.6 -8"
+ text="value: This is my first scene. This is amazing!; font: roboto; align: center; anchor: center;"  visible=""></a-entity>
+
+      <a-sky src="http://i.imgur.com/Oiq1KQi.jpg" crossorigin="anonymous"></a-sky>
+	  
+	  <a-box id="orange-cube" position="0 3.5 -2" rotation="30 30 0"
+      width="2" depth="2" height="2" color="#F16745"
+      href="aframe2.html"></a-box>
+
+    </a-scene>
+  </body>
+</html>
