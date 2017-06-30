@@ -6,29 +6,28 @@
   </head>
   <body>
     <a-scene>
+	<!-- Camera -->
 	  <a-entity position="0 1.8 4">
-        <a-camera>
-          <a-cursor color="#4CC3D9"></a-cursor>
-        </a-camera>
-      </a-entity>
-	  
-
-	<a-entity link="href:https://purna.github.io/vr/aframe1.html; title: My Homepage; image: #homeThumbnail" 
+		<a-camera>
+			<a-cursor color="#4CC3D9"></a-cursor>
+		</a-camera>
+	  </a-entity>
+	
+	<!-- Link to a second page -->
+	<a-entity link="href:https://purna.github.io/vr/aframe1.html; " 
 		look-at="0 1.6 0" 
-		scale="25 25 25" 
+		scale="1 1 1" 
 		position="0 1.6 -8"
-		text="value: This is my second scene. This is amazing!; font: roboto; align: center; anchor: center;"  
 		visible="">
 	</a-entity>
 
-	 <a-box id="homeThumbnail" position="-1 0.5 -3" rotation="0 45 0" color="#ff0000"></a-box>
-    
-	<a-box id="orange-cube" position="0 3.5 -2" rotation="30 30 0"
-      width="2" depth="2" height="2" color="#342678"></a-box>
+	<!-- Background -->
+	<a-sky src="https://i.imgur.com/QdtezXC.jpg" crossorigin="anonymous"></a-sky>
 
-	
-      <a-sky src="http://i.imgur.com/Oiq1KQi.jpg" crossorigin="anonymous"></a-sky>
-	
+	<!-- Foreground objects -->
+	<a-box position="-1 0.5 -3" rotation="0 45 0" color="#ff0000"></a-box>
+	<a-box id="orange-cube" position="0 3.5 -8" rotation="0 30 0" width="2" depth="2" height="2" color="#0000ff"></a-box>
+
     </a-scene>
   </body>
 </html>
