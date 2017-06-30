@@ -31,8 +31,12 @@
 	</a-entity>
 
 	<!-- Background -->
-	<a-sky src="https://youtu.be/tXU-OoUyZMc?list=PLBIsvuObDf1tPTIigjGaZrqzSfBjF9zlf" crossorigin="anonymous"></a-sky>
+	 <a-assets>
+        <video id="video" src="https://youtu.be/tXU-OoUyZMc?list=PLBIsvuObDf1tPTIigjGaZrqzSfBjF9zlf" autoplay loop crossorigin="anonymous"></video>
+      	</a-assets>
 
+      <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
+	
 	<!-- Foreground objects -->
 	<a-box position="23 12 12" rotation="0 45 0" color="#ff0000"></a-box>
 	<a-box id="orange-cube" position="20 45 -18" rotation="0 30 0" width="2" depth="2" height="2" color="#0000ff"></a-box>
