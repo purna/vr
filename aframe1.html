@@ -8,21 +8,21 @@
   <body>
     <a-scene>
 	 
-	<!-- Camera -->
-	  <a-entity position="0 1.8 4">
+	<!-- Camera →
+	<a-entity position="0 0 0">
 		<a-camera>
-			<a-cursor color="#4CC3D9"></a-cursor>
+			<a-cursor color="#ff0000"></a-cursor>
 		</a-camera>
-	  </a-entity>
-	
-	<!-- Link to a second page -->
-	<a-entity link="href:https://purna.github.io/vr/aframe2.html; " 
-		look-at="0 1.6 0" 
-		scale="1 1 1" 
-		position="0 1.6 -8"
-		visible="">
 	</a-entity>
 
+	<!-- Link to a second page -->
+	<a-entity link="href:https://yoururl;" 
+		look-at="0 0 0" 
+		scale="1 1 1" 
+		position="0 0 0"
+		visible="">
+	</a-entity>
+	
 	<!-- Background -->
 	<a-sky src="http://i.imgur.com/Oiq1KQi.jpg" crossorigin="anonymous"></a-sky>
 
